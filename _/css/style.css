@@ -1,0 +1,96 @@
+*{
+	box-sizing: border-box; /* Adds border values to the inside of an element */
+	-moz-boz-sizing: border-box;
+	font-family: sans-serif;
+	user-select:none;
+	-webkit-user-select: none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+}
+
+body {
+	margin: 0;
+}
+
+p {
+	color:blue;
+}
+
+#drwCanvas {
+	display: block; 
+}
+
+#toolbar {
+	width: 100%;
+	height: 50px;
+	padding: 10px;
+	position: fixed; /* Affixes the toolbar to the top of the window, not part of the window */
+	top: 0;
+	background-color: #2f2f2f;
+	color: #fff;
+}
+
+.radControl {
+	width: 30px;
+	height: 30px;
+	background-color: #4f4f4f;
+	display: inline-block;
+	text-align: center;
+	padding: 5px;
+	border-radius: 15px;
+}
+
+#decRad {
+	margin-left: 10px;
+}
+
+#rad {
+	float:left;
+	margin-left: 20px;
+}
+
+#radVal {
+	margin-left: 10px;
+	border: 1px white solid;
+	padding: 4px;
+}
+
+#colorPicker {
+	float:right;
+}
+.sample {
+	width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	box-shadow: inset 0px 1px 0px rgba(255,255,255, 0.5), 0px 2px 2px rgba(0,0,0, 0.5) ;
+	display: inline-block;
+	margin-left: 10px;
+}
+.sample.active {
+	border: 2px solid white;
+	box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+}
+
+#saveImage {
+	float:right;
+	margin-right: 20px;
+	height: 30px;
+	padding: 8px;
+	background-color: #434343;
+	border-radius: 5px;
+}
+
+/*
+#clearImage {
+	float:right;
+	margin-right: 20px;
+	height: 30px;
+	padding: 8px;
+	background-color: #434343;
+	border-radius: 5px;
+}
+*/
+
+#saveImage:hover{
+	background-color: #818181;
+}
